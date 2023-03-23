@@ -1,0 +1,63 @@
+<Html>
+    <head>
+        <title>SuperHero Hunter</title>
+       <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="icon" href="./images/favicon.png" type="image/gif">
+    
+    <!-- marvel font -->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Marvel" />
+    
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.goog leapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Shantell+Sans:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+       
+        <!-- navigation bar -->
+    <nav >
+        <ul>
+            <li><a class="active" href="#">Home</a></li>
+            
+           <li > <a href="./favourites.html">FAVOURITES</a></li>
+          
+        </ul>
+    </nav>
+<!-- form to search the characters -->
+    <main >
+        <form action="" method="get"  id="form">
+            <input id="search-character" type="search" placeholder="Search Your Superhero">
+            <!-- <button type="submit" id="search-hero">Search</button> -->
+        </form>
+    </main>
+<!-- container where superheroes will appear according to search -->
+    <div id="superhero-list">
+        <template id="template">
+            <div id="superhero">
+                <!-- images are not available in the api -->
+                 <img src="" alt="" id="image"> 
+
+                <!-- basic info -->
+                <div id="info">
+                    <div id="name"></div>
+                    <div id="id">Race</div>
+                    <div id="description">Description</div>
+                    
+                </div>
+                <div id="buttons">
+                    <!-- add fav button -->
+                    <button id="fav">Add to Favourite</button>
+                    <!-- button for directing to about page -->
+                    <button id="more-info">More Info</button>
+                </div>
+                
+            </div>
+        </template>
+    </div>
+    <script src="index.js"></script>
+</body>
+</Html>
